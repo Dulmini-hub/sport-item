@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Footer Section */
+footer {
+  background-color: #ef9424;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+/* Footer Container */
+.footerContent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* About Section */
+.aboutSection {
+  flex: 1;
+  margin: 20px;
+  min-width: 250px;
+  text-align: center;
+}
+
+.aboutSection h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.aboutSection p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Quick Links Section */
+.quickLinks {
+  flex: 1;
+  margin: 20px;
+  min-width: 250px;
+  text-align: center;
+}
+
+.quickLinks h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.quickLinks ul {
+  list-style-type: none;
+}
+
+.quickLinks ul li {
+  margin-bottom: 10px;
+}
+
+.quickLinks ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.quickLinks ul li a:hover {
+  color: #ff6b6b;
+}
+
+/* Social Links Section */
+.socialLinks {
+  flex: 1;
+  margin: 20px;
+  min-width: 250px;
+  text-align: center;
+}
+
+.socialLinks h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.socialIcons a {
+  margin-right: 10px;
+}
+
+.socialIcons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.socialIcons img:hover {
+  transform: scale(1.2);
+}
+
+/* Contact Info Section */
+.contactInfo {
+  flex: 1;
+  margin: 20px;
+  min-width: 250px;
+  text-align: center;
+}
+
+.contactInfo h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.contactInfo p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Divider */
+.divider {
+  margin: 20px 0 10px;
+}
+
+/* Copyright Section */
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #6b6b6b;
+  padding-top: 10px;
+}
+
+copyright p {
+  margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutSection,
+  .quickLinks,
+  .socialLinks,
+  .contactInfo {
+    min-width: 100%;
+  }
+
+  .socialIcons img {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 20px 10px;
+  }
+
+  .footerContent {
+    padding: 0 10px;
+  }
+
+  .aboutSection p,
+  .quickLinks ul li a,
+  .contactInfo p {
+    font-size: 12px;
+  }
+
+  .quickLinks ul li a:hover {
+    color: #ff4c4c; /* Slightly lighter hover effect on smaller screens */
+  }
+}
